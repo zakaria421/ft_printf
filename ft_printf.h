@@ -6,16 +6,16 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 00:34:07 by zbentale          #+#    #+#             */
-/*   Updated: 2022/11/06 01:32:43 by zbentale         ###   ########.fr       */
+/*   Updated: 2022/11/09 01:21:45 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-#include <stdio.h>
-#include <unistd.h>
-#include <stdarg.h>
+# include <stdio.h>
+# include <unistd.h>
+# include <stdarg.h>
 
 int		ft_printf(const char *str, ...);
 void	ft_putchar(char c);
