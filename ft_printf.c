@@ -6,7 +6,7 @@
 /*   By: zbentale <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 00:09:24 by zbentale          #+#    #+#             */
-/*   Updated: 2022/11/09 01:39:36 by zbentale         ###   ########.fr       */
+/*   Updated: 2022/11/09 05:23:26 by zbentale         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int	ft_printf(const char *str, ...)
 	{
 		if (str[i] != '%' && count++ >= 0)
 			ft_putchar(str[i]);
-		if (str[i] == '%')
+		if (str[i] == '%' && str[i + 1])
 		{
 			print(str, i, args, &count);
 			i++;
